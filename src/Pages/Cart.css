@@ -1,0 +1,45 @@
+.main-container{
+    width: 100%;
+}
+.imageCart-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imageCart-card h4{
+    margin-top: 10px;
+}
+.cart-card{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid rgb(185, 148, 218);
+    margin-top: 25px;
+}
+.cart-card img{
+    width: 50%;
+    height: 120px;
+}
+.cartCard-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+.cartCard-details p{
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.cartCard-details p:hover{
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+.cartCard-details button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
