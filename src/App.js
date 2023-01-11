@@ -1,11 +1,14 @@
-
+import Header from './Components/Header/Header';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
-    <div className="App">
-      <h1>HimaGirish</h1>
-    </div>
+    <BrowserRouter>
+     <Header />
+     <Route path="/cart"><Cart/></Route>
+     </BrowserRouter>
   );
 }
 
