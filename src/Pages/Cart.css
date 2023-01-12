@@ -38,10 +38,6 @@
     border-radius: 15px;
     padding: 5px;
 }
-.cartCard-details .product-price:hover{
-    background-color: rgb(13, 13, 13);
-    color: white;
-}
 .incrementButton{
     display: flex;
     justify-content: space-around;
