@@ -1,16 +1,9 @@
 .main-container{
     width: 100%;
 }
-.imageCart-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.imageCart-card h4{
-    margin-top: 10px;
-}
 .cart-card{
     width: 55%;
+    height: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -20,7 +13,16 @@
     box-shadow: rgba(0,0,0,0.35) 0px 2px 15px;
     margin-top: 25px;
 }
-.cart-card img{
+.imageCart-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.imageCart-card h4{
+    margin-top: 10px;
+}
+.imageCart-card img{
     width: 50%;
     height: 120px;
 }
@@ -29,19 +31,47 @@
     justify-content: space-around;
     align-items: center;
     column-gap: 40px;
+    width: 30%;
 }
-.cartCard-details p{
-    font-size: 1.5rem;
-    border: 3px solid black;
+.cartCard-details .product-price{
+    font-size: 1.2rem;
     border-radius: 15px;
     padding: 5px;
 }
-.cartCard-details p:hover{
+.cartCard-details .product-price:hover{
     background-color: rgb(13, 13, 13);
     color: white;
 }
-.cartCard-details button{
+.incrementButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.incrementButton button{
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid gainsboro;
+}
+.incrementButton p{
+    padding: 10px;
+}
+.button .remove-button{
     font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(187, 59, 59);
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+.totalPrice{
+    border: 2px solid rgb(236, 236, 236);
+    width: 19%;
+    margin: auto auto;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.35) 0px 2px 15px;
+    position: fixed;
+    top: 15%;
+    right: 2%;
+    padding: 20px;
 }

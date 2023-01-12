@@ -11,50 +11,58 @@ export const Products=[
     {
       id:1,
       name:"Apple iPhone 14 Pro",
-      price:"1,00,000",
-      image:Mobile 
+      price:100000,
+      image:Mobile,
+      quantity:1
     },
     {
         id:2,
         name:"Mac Book",
-        price:"60,000",
-        image:Laptop 
+        price:60000,
+        image:Laptop,
+        quantity:1
       },
       {
         id:3,
         name:"Canon EOS R6 Mark II (RF24-105mm f/4-7.1 IS STM)",
-        price:"1,20,000",
-        image:Camera  
+        price:120000,
+        image:Camera,
+        quantity:1 
       },
       {
         id:4,
         name:"Men-Jacket",
-        price:"1,200",
-        image:Jacket  
+        price:1200,
+        image:Jacket,
+        quantity:1 
       },
       {
         id:5,
         name:"LED Strip Lights",
-        price:"300",
-        image:Strip_lights  
+        price:300,
+        image:Strip_lights,
+        quantity:1  
       },
       {
         id:6,
         name:"H&M Full Sleeve-tshirt",
-        price:"900",
-        image:Tshirt  
+        price:900,
+        image:Tshirt,
+        quantity:1  
       },
       {
         id:7,
         name:"Demin Shirt",
-        price:"1,500",
-        image:Shirt  
+        price:1500,
+        image:Shirt,
+        quantity:1  
       },
       {
         id:8,
         name:"PUMA-Cap",
-        price:"450",
-        image:Cap  
+        price:450,
+        image:Cap,
+        quantity:1  
       },
 
 ]

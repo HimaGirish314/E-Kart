@@ -17,4 +17,7 @@
 .Navbar h2{
     margin-right: 200px;
 }
+.Navbar h2 sup{
+    color: white;
+}
 
