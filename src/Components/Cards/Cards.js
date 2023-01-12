@@ -1,5 +1,4 @@
 import React,{useContext} from 'react';
-// import Card from './Card';
 import './Cards.css';
 import { Products } from './../../Products';
 import { appContext } from '../Context/Context'
@@ -7,10 +6,24 @@ const Cards = () => {
   const {busket,setBusket}=useContext(appContext)
   const addItem=(res)=>{
     if(busket.includes(res)){
-      return res.quantity +=1
+      res.quantity +=1
+      return setBusket([...busket])
     }
     return setBusket([...busket,res])
   }
+  // const addItem=(res)=>{
+  //   let present=false
+  //   busket.forEach((data)=>{
+  //     if(data.id===res.id){
+  //       present=true 
+  //     }
+  //     return setBusket([...busket])
+  //   })
+  //   if(present){
+  //     return res.quantity +=1
+  //   }
+  //   setBusket([...busket,res])
+  // }
   return (
     <div className='single-card'>
         {
