@@ -8,15 +8,6 @@ const Header = () => {
     return acc +=curr.quantity
   },0)
 
-// const cartItems=()=>{
-//   const value=busket.reduce((acc,curr)=>{
-//   return acc +=curr.quantity
-// },0)
-// setCartValue(value)
-// }
-// useEffect(()=>{
-//   cartItems()
-// })
   return (
     <header>
         <div className="Navbar">
