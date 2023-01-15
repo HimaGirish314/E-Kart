@@ -11,6 +11,9 @@
     text-decoration: none;
     color: white;
 }
+.cart{
+    font-size: 1.8rem;
+}
 .Navbar h1{
     margin-left: 200px;
 }
@@ -19,5 +22,12 @@
 }
 .Navbar h2 sup{
     color: white;
+}
+.Navbar input{
+    width: 30%;
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
 }
 

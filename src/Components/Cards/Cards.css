@@ -2,38 +2,40 @@
     width: 100%;
 }
 .allProducts{
-    width: 90%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 1rem;
-    column-gap: 3rem;
+    column-gap: 5rem;
     margin: 0 auto;
+    margin-right: 125px;
 }
 .sortButtons{
-    width: 18%;
-    display: inline-block;
-    margin: 20px auto;
-    cursor: pointer;
-    text-align: center;
-    margin-left: 37rem;
-    border-bottom: 5px solid rgb(184, 102, 247);
+    display: flex;
+    justify-content: center;
 }
 .sortButtons span{
     padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+    border-bottom: 5px solid gray;
 }
 .card{
     width: 20%;
     margin-top: 20px;
-    transition: 0.5s;
-    height: 400px;
+    height: 390px;
     position: relative;
 }
-.card:hover{
+/* .card:hover{
     transform: scale(1.1);
-}
+} */
 .image-card img{
     width: 90%;
+    transition: 0.5s;
+}
+.image-card img:hover{
+    transform: scale(1.3);
 }
 .product-details{
     display: flex;
@@ -53,7 +55,7 @@
 .product-details button{
     margin: 5px;
     padding: 15px;
-    background-color: rgb(192, 192, 244);
+    background-color: rgb(193, 193, 201);
     border: 0;
     border-radius: 15px;
     font-size: 1rem;

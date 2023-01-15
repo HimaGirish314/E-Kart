@@ -8,9 +8,10 @@ import Cards from './Components/Cards/Cards';
 import { appContext } from './Components/Context/Context';
 function App() {
   const [busket,setBusket]=useState([])
+  const [searchTerm,setSearchTerm]=useState('')
   return (
     <div>
-      <appContext.Provider value={{busket,setBusket}}>
+      <appContext.Provider value={{busket,setBusket,searchTerm,setSearchTerm}}>
         <BrowserRouter>
           <Header  /> 
           <Route path="/" component={Cards} exact/>

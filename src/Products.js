@@ -24,7 +24,7 @@ export const Products=[
       },
       {
         id:3,
-        name:"Canon EOS R6 Mark II (RF24-105mm f/4-7.1 IS STM)",
+        name:"Canon EOS R6 Mark II",
         price:120000,
         image:Camera,
         quantity:1 
