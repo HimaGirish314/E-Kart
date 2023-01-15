@@ -71,3 +71,20 @@
     right: 2%;
     padding: 20px;
 }
+@media screen and (max-width:480px) {
+    .totalPrice{
+        position: sticky;
+        top: 70%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        height: 70px;
+    }
+    .cart-card{
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+}
