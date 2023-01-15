@@ -3,7 +3,7 @@ import './Cards.css';
 import { Products } from './../../Products';
 import { appContext } from '../Context/Context'
 const Cards = () => {
-  const {busket,setBusket}=useContext(appContext)
+  const {busket,setBusket,searchTerm}=useContext(appContext)
   const[newProducts,setNewProducts]=useState(Products)
   const addItem=(res)=>{
     if(busket.includes(res)){
@@ -13,24 +13,19 @@ const Cards = () => {
     return setBusket([...busket,res])
   }
   const newArray=(newArray)=>{
-        newArray.sort((a,b)=>{
+        let myName=newArray.sort((a,b)=>{
         if(a.price>b.price){return 1}
         else {return -1}
       })
-      return setNewProducts([...newArray])
+      return setNewProducts([...myName])
   }
   const newArray2=(newArray)=>{
-        newArray.sort((a,b)=>{
+    let myName=newArray.sort((a,b)=>{
         if(a.price>b.price){return -1}
         else {return 1}
       })
-      return setNewProducts([...newArray])
+      return setNewProducts([...myName])
   }
-    // let ascenArray=newProducts.sort((a,b)=>{
-    //   if(a.price>b.price){return 1}
-    //   else {return -1}
-    // })
-
   return (
     <div className='single-card'>
       <div className="sortButtons">
@@ -39,7 +34,7 @@ const Cards = () => {
       </div>
       <div className='allProducts'>
       { 
-            newProducts.map((data)=>{
+            newProducts.filter((data)=>data.name.toLowerCase().includes(searchTerm)).map((data)=>{
               const {id,name,price,image}=data;
                return (
                   <div key={id} className='card'>
@@ -56,13 +51,6 @@ const Cards = () => {
             })
         }
       </div>       
-      <div className="filterSection">        
-            {/* <select name="sort" id="sort">
-              <option value="sort">Sort</option>
-              <option value="Low-High" onSelect={()=>{newArray(newProducts)}}>Low-High</option>  
-              <option value="Low-High" onSelect={()=>{newArray2(newProducts)}}>High-Low</option>  
-            </select>     */}
-      </div>
     </div>
   )
 }
